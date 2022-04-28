@@ -7,7 +7,7 @@ $ docker volume ls
 Create new volume
 
 ```{bash}
-$ docker colume create example-volume
+$ docker volume create example-volume
 ```
 
 Mount new volume to container to folder /misko
@@ -18,5 +18,5 @@ docker run -d --rm --name container2 --mount source=example-volume,target=/misko
 
 Get details about volume 
 ```{bash}
-docker colume inspect example-volume
+docker volume inspect example-volume
 ```
